@@ -1,36 +1,31 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
+
 
 <template>
-  <header>
+  <header class="row">
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
+    <div class="wrapper">     
+      <h1 class="text-center">Code challenge - TV Shows</h1>
+      <!--<nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
-      </nav>
+      </nav>-->
     </div>
   </header>
-
-  <RouterView />
+  <!--<RouterView />-->
+  <home-view />
 </template>
 
+<script setup>
+  //import { RouterLink, RouterView } from 'vue-router'
+  //import HelloWorld from './components/HelloWorld.vue'
+  import HomeView from './views/HomeView.vue'
+</script>
+
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
+/*.bg-fashionette {
+  background-color: #e5c1c4;
+  font-family: AvenirNext,sans-serif;
 }
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
 nav {
   width: 100%;
   font-size: 12px;
@@ -55,31 +50,5 @@ nav a {
 nav a:first-of-type {
   border: 0;
 }
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
+*/
 </style>
