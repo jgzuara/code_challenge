@@ -1,4 +1,5 @@
 <template>
+<div class="container">
   <div class="col-12" v-if="filmData">
     <h2 class="text-center">{{filmData.film.name}}</h2>
     <div class="row">
@@ -26,6 +27,7 @@
       </div>
     </div>
   </div>
+</div>  
 </template>
 
 <script>

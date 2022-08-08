@@ -1,25 +1,23 @@
 <template>
-  <div class="container">
-    <div class="row">
-      <ul class="row">
-        <li 
-          v-for="film in films" 
-          v-bind:key="film.show.id"
-          class="col-6 col-md-3 list-unstyled my-1"
+  <div class="row">
+    <ul class="row">
+      <li 
+        v-for="film in films" 
+        v-bind:key="film.show.id"
+        class="col-6 col-md-3 list-unstyled my-1"
+      >
+        <RouterLink 
+          :to="{ name: 'show', params: {id: film.show.id}}"
         >
-          <RouterLink 
-            :to="{ name: 'show', params: {id: film.show.id}}"
+          <img
+            :src="(film.show.image) ? film.show.image.medium : 'src/images/noimage.png'" 
+            :alt="film.show.name"
+            :title="film.show.name"
+            class="col-12"
           >
-            <img
-              :src="(film.show.image) ? film.show.image.medium : 'src/images/noimage.png'" 
-              :alt="film.show.name"
-              :title="film.show.name"
-              class="col-12"
-            >
-          </RouterLink>
-        </li>
-      </ul>
-    </div>
+        </RouterLink>
+      </li>
+    </ul>
   </div>
 </template>
 

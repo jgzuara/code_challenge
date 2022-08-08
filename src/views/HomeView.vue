@@ -1,14 +1,16 @@
 <template>
-  <div class="row">
-    <div class="col-12 tex-center">
-      <search-text
-        :parameters="params"
-        @makeSearch="makeSearch"
-      />
-      <list-films
-        :films="filmsData"
-      />
-    </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <search-text
+          :parameters="params"
+          @makeSearch="makeSearch"
+        />
+        <list-films
+          :films="filmsData"
+        />
+      </div>
+    </div>  
   </div>
 </template>
 
