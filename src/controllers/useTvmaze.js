@@ -22,7 +22,7 @@ export default function useTvmaze() {
 
     await store.dispatch('models/tvmaze/getFilm', params)
       .then(response => {
-        film = response.data.data
+        film = response.data
         return true
       })
       .catch(error => {

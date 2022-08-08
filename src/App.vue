@@ -2,7 +2,9 @@
 
 <template>
   <header class="row">
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <RouterLink to="/" class="text-center">
+      <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    </RouterLink>
     <div class="wrapper">     
       <h1 class="text-center">Code challenge - TV Shows</h1>
       <!--<nav>
@@ -11,8 +13,8 @@
       </nav>-->
     </div>
   </header>
-  <!--<RouterView />-->
-  <home-view />
+  <RouterView />
+  <!--<home-view />-->
 </template>
 
 <script setup>

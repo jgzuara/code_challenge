@@ -39,7 +39,6 @@
       const response = ref(null)
 
       const params = reactive({
-        // id: null,
         searchText: null,
         page: 0
       })
