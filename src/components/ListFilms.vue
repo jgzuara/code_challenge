@@ -2,7 +2,11 @@
   <div class="container">
     <div class="row">
       <ul class="row">
-        <li v-for="film in films" class="col-6 col-md-3 list-unstyled my-1">
+        <li 
+          v-for="film in films" 
+          v-bind:key="film.show.id"
+          class="col-6 col-md-3 list-unstyled my-1"
+        >
           <RouterLink 
             :to="{ name: 'show', params: {id: film.show.id}}"
           >

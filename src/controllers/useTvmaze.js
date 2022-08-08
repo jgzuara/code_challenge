@@ -11,7 +11,7 @@ export default function useTvmaze() {
         return true
       })
       .catch(error => {
-        return false
+        return error
       })
 
     return { rows }
@@ -26,7 +26,7 @@ export default function useTvmaze() {
         return true
       })
       .catch(error => {
-        return false
+        return error
       })
 
     return { film }

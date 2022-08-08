@@ -31,7 +31,7 @@
 <script>
 import { useRoute } from 'vue-router'
 import useTvmaze from '@/controllers/useTvmaze'
-import { onMounted, onBeforeMount } from 'vue'
+import { onBeforeMount } from 'vue'
 import { reactive, ref } from 'vue'
 
 export default {
