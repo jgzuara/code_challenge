@@ -12,9 +12,16 @@
         >
       </div>
       <div class="col-12 col-sm-6 col-md-9">
-        <p><b>Language:</b> {{ filmData.film.language }}</p>
-        <p><b>Genres:</b> {{ filmData.film.genres }}</p>
-        <p><b>Summary:</b> {{ filmData.film.summary }}</p>
+        <p>
+          <b>Language:</b> {{ filmData.film.language }}
+        </p>
+        <p>
+          <b>Genres:</b> {{ filmData.film.genres }}
+        </p>
+        <p>
+          <b>Summary:</b>
+          <span v-html="filmData.film.summary"></span>
+        </p>
         <div class="col-12 text-center">
           <button 
             type="button" 
